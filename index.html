@@ -5,14 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>한글 난독화</title>
+    <style>
+        .textarea_form {
+            width: 50%;
+
+        }
+
+        .button_form {
+            min-width: 200px; 
+            min-height: 40px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+    </style>
 </head>
 <body>
     <script src="app.js"></script>
-    <h1>한글 난독화</h1>
-    <textarea></textarea>
-    <button type="button">변환하기</button>
-
+    <h2>한글 난독화</h2>
+    <textarea class="textarea_form" placeholder="변환할 문장을 입력해주세요." rows="8"></textarea>
+    <br>
+    <button type="button" class="button_form">변환하기</button>
     <h2>변환된 문장</h2>
-    <textarea></textarea>
+    <textarea class="textarea_form" rows="8"></textarea>
 </body>
 </html>
